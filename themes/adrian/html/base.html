@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>{{title}}{% block subtitle %}{% endblock %}</title>
+    {% block meta %}
+    <meta name="description" content="{{description}}">
+    <meta name="keywords" content="">
+    {% endblock %}
+    <link rel="canonical" href="{{site-url}}{{uri}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+    {% style "css/normalize.css" %}
+    {% style "css/base.css" %}
+    {% style "css/post.css" %}
+</head>
+<body>
+  <div class="top"></div>
+  <div class="container">
+    <nav id="nav">
+      <div>
+        <a href="{{index-uri}}">Home</a>
+        <a href="{{archives-uri}}">Archives</a>
+      </div>
+      <a class="blog-name" href="/about">{{title}}</a>
+    </nav>
+
+    <div>
+      <div>
+        <div id="content">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <p>&copy; {{today|date:yyyy}} {{author}}</p>
+      <p>Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
+      <p><a href="{{rss-uri}}">RSS</a></p>
+    </footer>
+  </div>
+
+  
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  {% script "js/highlight.pack.js" %}
+
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  {% if post.klipse %} {{post.klipse|safe}} {% endif %}
+  {% if page.klipse %} {{page.klipse|safe}} {% endif %}
+</body>
+</html>

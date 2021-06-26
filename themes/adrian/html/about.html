@@ -1,0 +1,37 @@
+{% extends "/html/base.html" %}
+{%block subtitle %}: {{page.title}}{% endblock %}
+{% block meta %}
+{% if page.description %}
+<meta name="description" content="{{page.description}}">
+{% comment %} OpenGraph tags {% endcomment %}
+<meta property="og:description" content="{{page.description}}">
+{% endif %}
+<meta property="og:url" content="{{site-url}}{{uri}}" />
+<meta property="og:title" content="{{page.title}}" />
+<meta property="og:type" content="article" />
+{% endblock %}
+{% block content %}
+
+<h1>Hi!</h1>
+
+<p>
+Congratulations on finding my little nook on the internet! I'm glad you're here.
+A little about myself: my name is <span class="name">Adrian Perea</span>, and programming is what I do for work and fun.
+I started this blog to share what I enjoy and love. I honestly believe that programming
+is the closest thing that we have to having superpowers; my goal is to convince you that it is!
+</p>
+
+<p>
+I hope that by reading this, you'll be able to leave with something valuable.
+Feel free to reach out through the channels below! I would love to hear your thoughts :)
+</p> 
+
+<h2>Contact Me</h2>
+
+<ul>
+  <li>Email: <a href="mailto:adrianmarkperea@gmail.com">adrianmarkperea@gmail.com</a></li>
+  <li>Github: <a href="https://github.com/adrianmarkperea">adrianmarkperea</a></li>
+  <li>Twitter: <a href="https://twitter.com/adrianmarkperea">@adrianmarkperea</a></li>
+</ul>
+
+{% endblock %}

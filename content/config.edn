@@ -1,0 +1,31 @@
+{:site-title                   "adrianperea.dev"
+ :author                       "Adrian Perea"
+ :description                  "Adrian Perea's little nook on the internet"
+ :site-url                     "https://adrianperea.dev"
+ :post-root                    "posts"
+ :page-root                    "pages"
+ :post-root-uri                ""
+ :page-root-uri                ""
+ :tag-root-uri                 "tags"
+ :author-root-uri              ""
+ :public-dest                  "public"
+ :blog-prefix                  ""
+ :rss-name                     "rss"
+ :rss-filters                  ["cryogen"]
+ :post-date-format             "yyyy-MM-dd"
+ :archive-group-format         "yyyy MMMM"
+ :sass-src                     []
+ :sass-path                    "sass"
+ :theme                        "adrian"
+ :resources                    ["img"]
+ :keep-files                   [".git"]
+ :disqus?                      false
+ :disqus-shortname             ""
+ :ignored-files                [#"\.#.*" #".*\.swp$"]
+ :previews?                    false
+ :clean-urls                   :trailing-slash
+ :collapse-subdirs?            false
+ :hide-future-posts?           true
+ :klipse                       {}
+ :description-include-elements #{:p :h1 :h2 :h3 :h4 :h5 :h6}
+ :debug?                       true}

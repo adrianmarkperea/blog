@@ -1,0 +1,72 @@
+#post-header, #page-header {
+  margin-bottom: 36px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Martel', serif;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+h2 {
+  margin: 32px 0 16px 0;
+}
+
+h3 {
+  margin: 24px 0 12px 0;
+}
+
+p {
+  line-height: 1.66em;
+}
+
+.date {
+  margin-top: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  border-left: 4px solid #426A5A;
+}
+
+pre > code {
+  background: #FAFAFA !important;
+  font-size: 0.85em;
+}
+
+#post-content {
+  font-family: 'Martel', serif;
+  font-size: 1em;
+}
+
+#post-tags {
+  margin-top: 32px;
+}
+
+li {
+  margin-bottom: 0.33em;
+}
+
+.tag-label {
+  font-family: 'Martel', serif;
+  font-weight: bold;
+}
+
+#prev-next {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+#posts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#posts ul h2 {
+  font-size: 1.1em;
+  margin: 0;
+}
