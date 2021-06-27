@@ -21,7 +21,7 @@ to share with everyone the beauty of code. In that vein, here's a [fractal tree]
   <canvas id="canvas"></canvas>
 </div>
 
-This blog will be littered with stuff similar to this, as well as more practical stuff in the real of programming. I hope you enjoy the ride, friend :)
+This blog will be littered with stuff similar to this, as well as more practical stuff in the realm of programming. I hope you enjoy the ride, friend :)
 
 <div style="text-align: right">
 <strong>&mdash; Adrian Perea</strong>
