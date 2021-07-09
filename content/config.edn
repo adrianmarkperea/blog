@@ -19,8 +19,8 @@
  :theme                        "adrian"
  :resources                    ["img"]
  :keep-files                   [".git"]
- :disqus?                      false
- :disqus-shortname             ""
+ :disqus?                      true
+ :disqus-shortname             "adrianperea-dev"
  :ignored-files                [#"\.#.*" #".*\.swp$"]
  :previews?                    false
  :clean-urls                   :trailing-slash
@@ -28,4 +28,4 @@
  :hide-future-posts?           true
  :klipse                       {:settings {:selector ".klipse-cljs"}}
  :description-include-elements #{:p :h1 :h2 :h3 :h4 :h5 :h6}
- :debug?                       true}
+ :debug?                       false}
